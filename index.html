@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  
+<meta charset="UTF-8">
+  
+<title>Login</title>
+  
+  
+  
+      
+<link rel="stylesheet" href="style.css">
+
+  
+
+</head>
+
+
+<body>
+  
+  <form class="box"  method="post" action="Menu/index.html">
+   <h1>Welcome</h1>
+  <input type="text" name="userid" placeholder="Username">
+  <input type="Password" name="pwd" placeholder="Password">
+  <input type="submit" onclick="return check(this.form)" value="Login">
+  
+
+
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "aleeya" && form.pwd.value == "aleey")
+{
+	return true;
+}
+else
+{
+	alert("Incorrect Username or Password")
+	return false;
+}
+}
+</script>
+
+
+</body>
+
+</html>
